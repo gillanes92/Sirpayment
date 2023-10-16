@@ -1,0 +1,418 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+.universal{
+  font-family: UniversLight,Calibri,Myriad,Tahoma,Geneva,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#landing_bolsas{
+  background: #fff;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#landing_bolsas ul, li{
+  list-style: none;
+}
+
+#landing_bolsas img{
+  max-width: 100%;
+}
+
+#landing_bolsas header{
+  background: #55be5a;
+  padding: 20px 15px;
+}
+
+#landing_bolsas header a{
+  display: block;
+  max-width: 90px;
+}
+
+#landing_bolsas .bg_green{
+  background: #00BF50;
+  text-align: center;
+}
+
+#landing_bolsas .bloque{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  border: 1px solid #000;
+  border-radius: 0;
+  height: 35px;
+  width: 100%;
+}
+
+#landing_bolsas .fila{
+  margin-bottom: 20px;
+}
+#landing_bolsas .fila p{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#landing_bolsas p{
+  margin-bottom: 10px;
+}
+
+#landing_bolsas .asterisco{
+  color: #ff0000;
+}
+
+#landing_bolsas .ayuda {
+  position: absolute;
+  right: 20px;
+  top: 7px;
+}
+
+#landing_bolsas h3{
+  margin-bottom: 20px;
+}
+
+#landing_bolsas .sociales li{
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+#landing_bolsas .sociales li a{
+  display: block;
+}
+
+#landing_bolsas .sociales li:first-child{
+  width: 20%;
+  font-size: 14px;
+}
+
+#landing_bolsas .btn_purple{
+  background: #EC5586;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  min-width: 160px;
+}
+
+#landing_bolsas form label {
+  cursor: pointer;
+}
+
+#landing_bolsas .campos{
+  font-size: 0.875em;
+  margin: 30px 0 20px 0;
+}
+
+#landing_bolsas .campos li{
+  margin-bottom: 10px;
+}
+
+#landing_bolsas .border_top{
+  border-top: 1px solid #000;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+
+#landing_bolsas h2,#landing_bolsas h3{
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+#landing_bolsas h3{
+  font-size: 24px;
+
+}
+
+#landing_bolsas .footer p{
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+#landing_bolsas .bloque_mini{
+  margin-bottom: 20px;
+}
+
+#landing_bolsas b{
+  font-weight: bold;
+}
+
+#landing_bolsas .cont_tooltip a{
+  text-decoration: underline;
+}
+
+#landing_bolsas .cont_tooltip{
+  background: #fff;
+  display: none;
+  font-size: 0.875em;
+  margin-top: 10px;
+  padding: 10px;
+  -moz-box-shadow:    0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow:         0 0 5px #ccc;
+}
+
+#landing_bolsas .flecha{
+  position: absolute;
+  right: 12px;
+  bottom: -18px;
+}
+
+#landing_bolsas .enviando {
+  background-image: url('../images/ajax-loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: progress;
+  text-indent: -999em;
+}
+
+#enviado {
+  background: rgba(0, 0, 0, .6);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  overflow: auto;
+  display: none;
+  cursor: pointer;
+}
+
+.enviando-wrap {
+  background: #00BF50;
+  border: 3px solid #fff;
+  color: #fff;
+  max-width: 800px;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, 0);
+  top: 10%;
+  position: absolute;
+  width: 90%;
+}
+
+.enviando-wrap h2 {
+  font-size: 1.4em;
+}
+
+#landing_bolsas ul.bolsas{
+  text-align: center;
+  margin: 0 auto;
+  padding:0;
+}
+
+#landing_bolsas ul.bolsas li{
+  display: inline-block;
+  width: 90%;
+  max-width: 300px;
+  border: 1px solid #cecece;
+  margin: 4px 0;
+}
+
+#landing_bolsas ul.bolsas li:hover, #landing_bolsas ul.bolsas li.active{
+  background-color: #AFE0F6;
+}
+
+
+#landing_bolsas ul.bolsas li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+}
+
+#landing_bolsas ul.bolsas li a:hover{
+  text-decoration: none;
+}
+
+#landing_bolsas ul.bolsas li a img{
+  width: 30px;
+}
+
+#landing_bolsas ul.bolsas li a h4{
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+}
+
+#landing_bolsas ul.bolsas li a h4 span{
+  font-size: 14px;
+  color: #767676;
+}
+
+
+@media (min-width: 768px){
+  .enviando-wrap {
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+
+  #landing_bolsas .cont_tooltip{
+    background: #fff;
+    display: none;
+    font-size: 0.875em;
+    margin-top: 0;
+    max-width: 400px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: -80px;
+    -moz-box-shadow:    0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow:         0 0 5px #ccc;
+  }
+  #landing_bolsas .border_right{
+    border-right: 1px solid #000;
+  }
+
+  #landing_bolsas ul.bolsas li{
+    width: 200px;
+  }
+
+  #landing_bolsas ul.bolsas li a img{
+    width: 80px;
+  }
+}
+
+@media (min-width: 1200px){
+
+  #landing_bolsas ul.bolsas{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #landing_bolsas ul.bolsas li{
+    width: 260px;
+  }
+
+  #landing_bolsas ul.bolsas li a{
+    padding: 24px 0;
+  }
+
+  #landing_bolsas ul.bolsas li a img{
+    width: 140px;
+  }
+
+  #landing_bolsas ul.bolsas li a h4{
+    font-size: 24px;
+  }
+
+  #landing_bolsas ul.bolsas li a h4 span{
+    display: block;
+    font-size: 20px;
+  }
+
+  #landing_bolsas .bloque.footer{
+    margin: 40px 0 0 0;
+
+  }
+}
+
+#landing_bolsas footer{
+  background: #262626;
+  color: #666;
+  padding: 35px 0;
+  margin-top: 100px;
+}
+
+#landing_bolsas footer a{
+  color: #73b6e2;
+}
+
+#landing_bolsas .sociales_footer{
+  margin-bottom: 20px;
+}
+
+#landing_bolsas .sociales_footer li{
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#landing_bolsas footer .separador{
+  display: none;
+}
+.loader {
+  font-size: 5px;
+  margin: 2% auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0em -3em 0em 0.2em black, 2em -2em 0 0em black, 3em 0em 0 -0.5em black, 2em 2em 0 -0.5em black, 0em 3em 0 -0.5em black, -2em 2em 0 -0.5em black, -3em 0em 0 -0.5em black, -2em -2em 0 0em black;
+  }
+  12.5% {
+    box-shadow: 0em -3em 0em 0em black, 2em -2em 0 0.2em black, 3em 0em 0 0em black, 2em 2em 0 -0.5em black, 0em 3em 0 -0.5em black, -2em 2em 0 -0.5em black, -3em 0em 0 -0.5em black, -2em -2em 0 -0.5em black;
+  }
+  25% {
+    box-shadow: 0em -3em 0em -0.5em black, 2em -2em 0 0em black, 3em 0em 0 0.2em black, 2em 2em 0 0em black, 0em 3em 0 -0.5em black, -2em 2em 0 -0.5em black, -3em 0em 0 -0.5em black, -2em -2em 0 -0.5em black;
+  }
+  37.5% {
+    box-shadow: 0em -3em 0em -0.5em black, 2em -2em 0 -0.5em black, 3em 0em 0 0em black, 2em 2em 0 0.2em black, 0em 3em 0 0em black, -2em 2em 0 -0.5em black, -3em 0em 0 -0.5em black, -2em -2em 0 -0.5em black;
+  }
+  50% {
+    box-shadow: 0em -3em 0em -0.5em black, 2em -2em 0 -0.5em black, 3em 0em 0 -0.5em black, 2em 2em 0 0em black, 0em 3em 0 0.2em black, -2em 2em 0 0em black, -3em 0em 0 -0.5em black, -2em -2em 0 -0.5em black;
+  }
+  62.5% {
+    box-shadow: 0em -3em 0em -0.5em black, 2em -2em 0 -0.5em black, 3em 0em 0 -0.5em black, 2em 2em 0 -0.5em black, 0em 3em 0 0em black, -2em 2em 0 0.2em black, -3em 0em 0 0em black, -2em -2em 0 -0.5em black;
+  }
+  75% {
+    box-shadow: 0em -3em 0em -0.5em black, 2em -2em 0 -0.5em black, 3em 0em 0 -0.5em black, 2em 2em 0 -0.5em black, 0em 3em 0 -0.5em black, -2em 2em 0 0em black, -3em 0em 0 0.2em black, -2em -2em 0 0em black;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0em 0em black, 2em -2em 0 -0.5em black, 3em 0em 0 -0.5em black, 2em 2em 0 -0.5em black, 0em 3em 0 -0.5em black, -2em 2em 0 0em black, -3em 0em 0 0em black, -2em -2em 0 0.2em black;
+  }
+}
+
+
+
+ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 20px;
+}
+
+ul li a {
+  display: block; 
+  margin-left: 20px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

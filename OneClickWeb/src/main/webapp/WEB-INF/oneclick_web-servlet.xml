@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+           http://www.springframework.org/schema/jee
+           http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/listar.htm">listarController</prop>
+                <prop key="/inscribir.htm">inscribirController</prop>
+                <prop key="/pagar.htm">pagarController</prop>
+                <prop key="/redirect.htm">redirectController</prop>
+                <prop key="/servicio_ajax.htm">ajaxServiceController</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--
+    The index controller.
+    -->
+    <bean name="listarController" class="cl.ndt.bolsas.enel.controllers.ListarController"/>
+    <bean name="inscribirController" class="cl.ndt.bolsas.enel.controllers.InscribirController"/>
+    <bean name="pagarController" class="cl.ndt.bolsas.enel.controllers.PagarController"/>
+    
+    <bean name="redirectController" class="cl.ndt.bolsas.enel.controllers.RedirectController"/>
+    
+    <bean name="ajaxServiceController" class="cl.ndt.bolsas.enel.service.AjaxServiceController">
+        <property name="consultaDao" ref="consultaDao" />
+    </bean>
+        
+    
+    <bean id="consultaDao"  name="consultaDao" class="cl.ndt.bolsas.enel.dao.jdbcImpl.ConsultaDaoImpl" >
+        <property name="dataSource" ref="dataSourceAC" />
+    </bean>
+    
+    <jee:jndi-lookup id="dataSourceAC" jndi-name="java:/SIR"/>
+    
+    <bean id="jspViewResolver"
+             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+             <property name="viewClass"
+                    value="org.springframework.web.servlet.view.JstlView" />
+             <property name="prefix" value="/WEB-INF/jsp/" />
+             <property name="suffix" value=".jsp" />
+       </bean>
+
+</beans>
